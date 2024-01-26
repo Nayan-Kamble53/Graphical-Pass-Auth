@@ -1,0 +1,38 @@
+li {
+    color: white;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  li::before {
+    margin-left: auto;
+  }
+  
+  li::after, li::before {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #0ea0d1;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  li:hover::after, li:hover::before {
+    width: 100%;
+  }
+
+  li:hover {
+    font-weight: bold;
+  }
+    
+  button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.10em 0.10em #5566c2;
+  }
+  
+  button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #5566c2;
+  }
