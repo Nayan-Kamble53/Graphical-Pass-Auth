@@ -126,7 +126,7 @@ function Register() {
       );
 
       try {
-        const res = await axios.post('http://localhost:6010/api/register', {
+        const res = await axios.post('https://gpa-backend-api.onrender.com/api/register', {
           name,
           email,
           passwordHash,

@@ -28,7 +28,7 @@ const Otp = () => {
     }; 
 
         try {
-            const resp = await axios.post(`http://localhost:6010/validate-otp`, {
+            const resp = await axios.post(`https://gpa-backend-api.onrender.com/validate-otp`, {
               email: userEmail,
               enteredOTP,
             });
@@ -37,7 +37,7 @@ const Otp = () => {
               toast.success("OTP verified successfully");
               setValidationMsg(resp.data.message);
               
-              const response = await fetch(`http://localhost:6010/delete/${email}`, {
+              const response = await fetch(`https://gpa-backend-api.onrender.com/delete/${email}`, {
               method: 'DELETE',
               headers: {
                 'Content-Type': 'application/json',

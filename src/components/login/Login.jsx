@@ -36,7 +36,7 @@ function Login() {
       console.log("round 0, no img tile");
       try {
         const res = await axios.post(
-          `http://localhost:6010/api/login`,
+          `https://gpa-backend-api.onrender.com/api/login`,
           {
             email: email,
             iterationNum: roundNumber,
@@ -63,7 +63,7 @@ function Login() {
         console.log(sequences);
         const currentSequence = sequences.current[sequences.current.length - 1];
         const res = await axios.post(
-          `http://localhost:6010/api/login`,
+          `https://gpa-backend-api.onrender.com/api/login`,
           {
             email: email,
             iterationNum: roundNumber,
@@ -101,7 +101,7 @@ function Login() {
       const currentSequence = sequences.current[sequences.current.length - 1];
       try {
         const res = await axios.post(
-          `http://localhost:6010/api/login`,
+          `https://gpa-backend-api.onrender.com/api/login`,
           {
             email: email,
             iterationNum: roundNumber,
