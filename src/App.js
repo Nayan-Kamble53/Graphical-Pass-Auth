@@ -2,7 +2,6 @@ import React from "react";
 import { Login } from "./components/login";
 import { Register } from "./components/register";
 import { Home } from "./components/home";
-import { Home2 } from "./components/home2";
 import { Router } from "@reach/router";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -19,7 +18,6 @@ function App() {
         <Register path="/register" />
         <Login path="/login" />
         <Home path="/" />
-        <Home2 path="/home" />
         <Authenticated path="/authenticated" />
         <About path="/about" />
         <Contact path="/contact" />

@@ -7,7 +7,7 @@ import tick from '../Assets/tick.png';
 
 function Authenticated() {
   function logoutHandler() {
-    navigate("/home");
+    navigate("/");
     toast.success("Logged out successfully"); 
   }
 

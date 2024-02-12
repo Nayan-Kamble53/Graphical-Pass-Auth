@@ -202,6 +202,11 @@ function Login() {
               Login
             </button>}
           </div>
+
+          <span className="flex justify-center text-center mt-2 text-richblack-200 font-bold hover:underline cursor-pointer"
+          onClick={() => navigate("/reset")}>
+            Forgot Password ?
+          </span>
         </form>
       </div>) :
       ( loading ? (<Spinner/>) :
