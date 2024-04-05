@@ -30,7 +30,7 @@ const Reset = () => {
   }
 
     const sentOtpFunction = async(data)=>{
-      return await commonrequest("POST",`https://gpa-backend-api.onrender.com/sendotp`,data)
+      return await commonrequest("POST",`https://graphical-pass-auth.onrender.com/sendotp`,data)
   }
 
     const submitHandler = async (e) => {
