@@ -125,6 +125,9 @@ function Login({setIsLoggedIn}) {
           setIsHuman(false);
           setImages([]);
           sequences.current = [];
+          setTimeout(() => {
+            window.location.reload();
+          }, 3000);
         } else {
           toast.error("Server error")
         }
