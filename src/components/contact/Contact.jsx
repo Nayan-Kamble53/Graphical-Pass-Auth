@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`https://gpa-backend-api.onrender.com/contact`, formData);
+      const response = await axios.post(`https://graphical-pass-auth.onrender.com/contact`, formData);
       console.log(response.data);
       toast.success('Message sent successfully!');
       setTimeout(() => {
