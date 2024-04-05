@@ -53,6 +53,8 @@ function Login({setIsLoggedIn}) {
         }
       } catch (err) {
         console.error(err);
+        toast.error("User not registered");
+        navigate("/register");
       }
     }
 
