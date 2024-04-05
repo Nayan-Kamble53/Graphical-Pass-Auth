@@ -154,6 +154,9 @@ function Login({setIsLoggedIn}) {
             handleSubmit();
           } else {
             toast.warn("Error in recognising Captcha, Please try again");
+            setTimeout(() => {
+              window.location.reload();
+            }, 2500)
           }
           setShowCaptcha(false);
         }}
