@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Login } from "./components/login";
 import { Register } from "./components/register";
 import { Home } from "./components/home";
@@ -10,15 +10,17 @@ import { About } from "./components/about";
 import { Contact } from "./components/contact";
 import { Reset } from "./components/reset";
 import { Otp } from "./components/otp";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="bg-richblack-900">
       <Router>
-        <Register path="/register" />
-        <Login path="/login" />
         <Home path="/" />
-        <Authenticated path="/authenticated" />
+        <Register path="/register" />
+        <Login path="/login" setIsLoggedIn={setIsLoggedIn}/>
+        <PrivateRoute path="/authenticated" component={Authenticated} isLoggedIn={isLoggedIn} />
         <About path="/about" />
         <Contact path="/contact" />
         <Reset path="/reset" />

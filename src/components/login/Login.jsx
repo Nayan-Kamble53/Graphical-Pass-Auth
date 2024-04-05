@@ -17,7 +17,7 @@ function hashImage(image, ref_point) {
   return CryptoJS.SHA256(str).toString(CryptoJS.enc.base64);
 }
 
-function Login() {
+function Login({setIsLoggedIn}) {
   const [email, setEmail] = useState("");
   const [ imageCaption , setImageCaption ] = useState("");
   const [roundNumber, setRoundNumber] = useState(0);
@@ -113,6 +113,7 @@ function Login() {
 
         if (res.status === 200) {
           console.log("success!!");
+          setIsLoggedIn(true);
           toast.success("Logged in successfully!");
           navigate("/authenticated");
         }

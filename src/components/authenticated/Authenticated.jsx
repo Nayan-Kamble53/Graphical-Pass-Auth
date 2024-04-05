@@ -9,6 +9,9 @@ function Authenticated() {
   function logoutHandler() {
     navigate("/");
     toast.success("Logged out successfully"); 
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
   }
 
   return (
