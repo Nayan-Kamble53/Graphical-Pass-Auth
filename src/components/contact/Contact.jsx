@@ -29,8 +29,12 @@ const Contact = () => {
       setTimeout(() => {
         toast.info('Thank You for reaching out to us, we will get in touch with you shortly!', {
           autoClose: 4000
-        })
+        });
       }, 2000);
+
+      setTimeout(() => {
+        window.location.reload();
+      }, 6000);
     } catch(error) {
       console.error('Error sending message:', error);
       toast.error('Failed to send message. Please try again.');
