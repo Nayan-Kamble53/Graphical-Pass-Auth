@@ -36,7 +36,7 @@ function Login({setIsLoggedIn}) {
       console.log("round 0, no img tile");
       try {
         const res = await axios.post(
-          `https://graphical-pass-auth.onrender.com/login`,
+          `https://graphical-pass-auth.onrender.com/api/login`,
           {
             email: email,
             iterationNum: roundNumber,
@@ -63,7 +63,7 @@ function Login({setIsLoggedIn}) {
         console.log(sequences);
         const currentSequence = sequences.current[sequences.current.length - 1];
         const res = await axios.post(
-          `https://graphical-pass-auth.onrender.com/login`,
+          `https://graphical-pass-auth.onrender.com/api/login`,
           {
             email: email,
             iterationNum: roundNumber,
@@ -101,7 +101,7 @@ function Login({setIsLoggedIn}) {
       const currentSequence = sequences.current[sequences.current.length - 1];
       try {
         const res = await axios.post(
-          `https://graphical-pass-auth.onrender.com/login`,
+          `https://graphical-pass-auth.onrender.com/api/login`,
           {
             email: email,
             iterationNum: roundNumber,

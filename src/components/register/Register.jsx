@@ -126,7 +126,7 @@ function Register() {
       );
 
       try {
-        const res = await axios.post('https://graphical-pass-auth.onrender.com/register', {
+        const res = await axios.post('https://graphical-pass-auth.onrender.com/api/register', {
           name,
           email,
           passwordHash,
