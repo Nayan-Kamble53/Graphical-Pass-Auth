@@ -170,7 +170,7 @@ function Register() {
 
       <NavBar/>
       <div className="mx-auto my-2 font-light flex justify-between h-full max-w-[75vw] mb-[-2.2%]">
-        <form className="pt-6 w-[28vw] flex flex-col items-center">
+        <form className="reg pt-6 w-[28vw] flex flex-col items-center">
           <h1 className='text-richblack-5 font-semibold text-[1.6rem] mx-5 mb-5'>
             Welcome to Graphical Password Authentication System !
           </h1>
@@ -181,7 +181,7 @@ function Register() {
             <span className='text-blue-100 italic'>Try new password system for your next project.</span>
           </p>
 
-            <div className="mb-4 flex flex-col">
+            <div className="inp mb-4 flex flex-col">
               <label className="text-lg text-richblack-5 mb-2 leading-[1.375rem] mx-3" htmlFor="name">
                 Name <sup className="text-pink-200">*</sup>
               </label>
@@ -196,7 +196,7 @@ function Register() {
               />
             </div>
 
-            <div className="mb-4 flex flex-col ">
+            <div className="inp mb-4 flex flex-col ">
               <label className="text-gray-100 mb-2 text-lg mx-3" htmlFor="email">
                 Email <sup className="text-pink-200">*</sup>
               </label>
@@ -211,7 +211,7 @@ function Register() {
               />
             </div>
 
-            <div className="mb-4 flex flex-col">
+            <div className="inp mb-4 flex flex-col">
               <label className="text-gray-100 mb-2 mx-3 text-lg" htmlFor="category">
                 Category for image <sup className="text-pink-200">*</sup>
               </label>
@@ -241,7 +241,7 @@ function Register() {
             </div>
         </form>
 
-        <div className='relative max-w-[32vw] left-16 mt-[-10%]'>
+        <div className='regImg relative max-w-[32vw] left-16 mt-[-10%]'>
         <img src={registerImg}
             alt='frame' 
             width={558}
@@ -253,7 +253,7 @@ function Register() {
       
       {roundNumber === NUM_ROUNDS ? 
       (
-        <div className="flex flex-col justify-center items-center mt-10">
+        <div className="regCon flex flex-col justify-center items-center mt-10">
           <p className="mx-auto text-3xl my-2">You're almost there!</p>
           
           <button className="bg-yellow-50 w-[12vw] py-[8px] px-[] mt-2 rounded-xl font-medium text-richblack-900 mb-20" 
@@ -271,9 +271,9 @@ function Register() {
             numTiles={NUM_TILES}
             isLoading={isLoading}
           />)
-      )} 
+      )}  
       
-      <div className="mt-[-1%]">
+      <div className=" mt-[-1%]">
         <Footer/>
       </div>
     </Fragment>

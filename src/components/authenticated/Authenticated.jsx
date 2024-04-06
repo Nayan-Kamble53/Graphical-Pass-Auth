@@ -18,7 +18,7 @@ function Authenticated() {
     <div className="flex justify-center items-center flex-col h-screen">
       <h1 className="text-4xl text-center">You're in </h1>
 
-      <div className='bg-indigo-900 w-[35vw] rounded-xl shadow-lg shadow-gray-700 h-[35vh] mt-5 flex py-5 px-8 items-center flex-col'>
+      <div className='auth bg-indigo-900 w-[35vw] rounded-xl shadow-lg shadow-gray-700 h-[35vh] mt-5 flex py-5 px-8 items-center flex-col'>
         <img width={100} src={tick}/>
           <p className='font-bold text-xl mt-2'>LOG IN SUCCESSFUL</p>
           <p className='mt-3 text-center text-[16px]'>You have successfully signed into your account. You can close this window and continue using the product.</p>

@@ -59,11 +59,11 @@ const Reset = () => {
     }      
     
   return (
-      <div className='h-screen flex flex-col justify-between'>
+      <div className=' h-screen flex flex-col justify-between'>
         <NavBar/>
         {isLoading ? <Spinner/> :
-        <div className='flex flex-col items-center'>
-            <div className="shadow-lg shadow-slate-500 rounded px-8 pt-6 pb-8 mb-4 w-[32vw]">
+        <div className='reset flex flex-col items-center'>
+            <div className=" shadow-lg shadow-slate-500 rounded px-8 pt-6 pb-8 mb-4 w-[32vw]">
                 <h1 className='text-richblack-5 font-semibold text-[1.6rem] mx-5 mb-5'>
                 Reset your Password !
                 </h1>
@@ -74,7 +74,7 @@ const Reset = () => {
                 <span className='text-blue-100 italic'>Verify the Email ID and Reset your password.</span>
                 </p>
 
-                <div className="mb-4 flex flex-col">
+                <div className="inp mb-4 flex flex-col">
                 <label className="text-lg text-richblack-5 mb-1 mx-3" htmlFor="email">
                     Email <sup className="text-pink-200">*</sup>
                 </label>
@@ -99,8 +99,7 @@ const Reset = () => {
             </div>
         </div>
         }
-
-        <Footer/>
+            <Footer/>
     </div>
   )
 }

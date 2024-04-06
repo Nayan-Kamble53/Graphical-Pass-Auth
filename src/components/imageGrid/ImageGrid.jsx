@@ -16,7 +16,7 @@ function ImageGrid(props) {
   }
 
   return (
-    <div className="mt-5 ml-16">
+    <div className="imgGrid mt-5">
       <Grid
         images={images}
         addImageAndTileSequence={props.addImageAndTileSequence}

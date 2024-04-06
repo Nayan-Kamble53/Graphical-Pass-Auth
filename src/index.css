@@ -47,3 +47,99 @@
       transform: rotate(-360deg);
     }
   } 
+
+  @media (max-width: 720px) {
+    .home {
+      height: 100vh;
+      /* overflow-y: hidden; */
+    }
+    .unlock {
+      max-width: 75vw;
+      line-height: 1;
+      font-size: larger;
+      margin-top: 10px;
+    }
+
+    .welcome {
+      text-align: center;
+      max-width: 75vw;
+    }
+
+    .regImg {
+      display: none;
+    }
+
+    form{
+      margin-top: 25%;
+    }
+
+    .reg {
+      width: 100vw;
+      height: 100%;
+    }
+
+    .reg h1, p {
+      font-size: larger;
+      text-align: center;
+    }
+
+    .inp input {
+      width: 60vw;
+    }
+
+    .canva {
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .log {
+      padding-bottom: 10%;
+      height: 100vh;
+    }
+
+    .log form {
+      width: 100vw;
+    }
+
+    .log h1 {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+
+    .regCon button {
+      width: 100vw;
+    }
+
+    .auth {
+      width: 95vw;
+      height: 40vh;
+    }
+
+    .reset {
+      overflow-y: hidden;
+    }
+
+    .reset :first-child{
+      width: 90vw;
+    }
+
+    .foot {
+      font-size: 20px;
+      line-height: 1.5rem;
+      margin-left: 0%;
+      text-align: center;
+    }
+
+    .foot button {
+      display: none;
+    }
+
+    .otp form {
+      width: 90vw;
+      margin-bottom: 20px;
+    }
+
+    .otp form h1 {
+      text-align: center;
+    }
+  }
