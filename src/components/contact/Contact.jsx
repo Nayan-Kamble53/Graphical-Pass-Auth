@@ -14,7 +14,6 @@ const Contact = () => {
     message: '',
   });
 
-  // const BASE_URL = process.env.BASE_URL;
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -42,20 +41,20 @@ const Contact = () => {
   };
 
   return (
-    <div className='h-full flex flex-col justify-between'>
+    <div className='con flex flex-col justify-between'>
       <NavBar/>
       
-      <div className='flex justify-center items-start gap-24'>
-        <div className='flex items-center justify-center mt-40 w-[40vw] h-[50vh] p-0 shadow-richblack-200 shadow-lg rounded-3xl'>
+      <div className='con flex justify-center items-start gap-24'>
+        <div className='conImg flex items-center justify-center mt-40 w-[40vw] h-[50vh] p-0 shadow-richblack-200 shadow-lg rounded-3xl'>
           <img width={580} src={contact}/>
         </div>
 
-        <div className='flex flex-col gap-y-4 my-16 shadow-richblack-200 shadow-lg p-12 rounded-3xl'>
-          <h1 className='text-richblack-5 font-semibold text-[2rem] max-w-[32vw] mb-5'>
+        <div className='con1 flex flex-col gap-y-4 my-16 shadow-richblack-200 shadow-lg p-12 rounded-3xl'>
+          <h1 className='text-richblack-5 font-semibold text-[2rem] w-[32vw] mb-5'>
             Got a Idea? We'he got the skills. Let's team up.
           </h1>
 
-          <div className='flex gap-3'>
+          <div className='conInp flex gap-3'>
             <label className="text-lg text-richblack-5 leading-[1.375rem] ">
               First Name<sup className="text-pink-200">*</sup><br/>
             <input className='mt-2 bg-richblack-800 rounded-[0.75rem] text-[15px] w-[15vw] p-[12px] text-richblack-5' 
@@ -69,7 +68,7 @@ const Contact = () => {
             </label> 
           </div>
           
-          <div>
+          <div className='inp'>
             <label className="text-lg text-richblack-5 leading-[1.375rem]">
               Email<sup className="text-pink-200">*</sup><br/>
               <input className='mt-2 bg-richblack-800 text-[15px] rounded-[0.75rem] w-[31.5vw] p-[12px] text-richblack-5'
@@ -77,7 +76,7 @@ const Contact = () => {
             </label>
           </div> 
           
-          <div>
+          <div className='inp'>
             <label className="text-lg text-richblack-5 leading-[1.375rem]">
               Subject <sup className="text-pink-200">*</sup><br/>
               <input  className='mt-2 bg-richblack-800 text-[15px] rounded-[0.75rem] w-[31.5vw] p-[12px] text-richblack-5'
@@ -85,11 +84,11 @@ const Contact = () => {
             </label>
           </div>
 
-          <div>
+          <div className='txta'>
             <label className="text-lg text-richblack-5 leading-[1.375rem]">
               Message <sup className="text-pink-200">*</sup><br/>
               <textarea className='mt-2 bg-richblack-800 text-[15px] rounded-[0.75rem] w-[31.5vw] p-[12px] text-richblack-5'
-              name="message" value={formData.message} onChange={handleChange} required rows={8} placeholder='Enter your message' />
+              name="message" value={formData.message} onChange={handleChange} required rows={4} placeholder='Enter your message' />
             </label>
           </div> 
 

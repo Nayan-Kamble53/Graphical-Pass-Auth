@@ -229,7 +229,7 @@ function Login({setIsLoggedIn}) {
         />
       </div>)
       )}
-      <div className="">
+      <div className="mt-[-10px]">
         <Footer/>
       </div>
     </div>

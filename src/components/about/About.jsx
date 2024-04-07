@@ -11,31 +11,32 @@ const About = () => {
 
       <div className='bg-richblack-900 w-full'>
       <div className='bg-richblack-700 h-[65vh] w-full flex flex-col items-center pt-[5%]'>
-        <div className='max-w-[60vw] text-white font-bold text-4xl text-center'>
+        <div className='driving w-[60vw] text-white font-bold text-4xl text-center'>
           Driving Innovation in Online Password System for a 
           <p className='bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text'>
             Secure Environment
           </p>
         </div>
 
-        <div className='max-w-[60vw] text-center mt-5 text-lg'>
+        <div className='cutting w-[60vw] text-center mt-5 text-lg'>
          A cutting-edge project focused on enhancing security through innovative graphical password authentication. Our mission is to revolutionize traditional text-based password systems by introducing a visually intuitive and secure method of user authentication.
         </div>
 
-        <div className='flex gap-10'>
+        <div className='gifs flex gap-10'>
           <img 
           width={400}
           src={gif1}/>
           <img 
+          className='gif1'
           width={400}
           src={gif1}/>
-          <img className=''
+          <img 
           width={400}
           src={gif1}/>
         </div>
       </div>
 
-      <div className='w-full mt-[12%] mb-[4%] bg-richblack-900 text-[35px] text-center max-w-[75vw] font-semibold text-white ml-[11%]'>
+      <div className='our mt-[12%] mb-[4%] bg-richblack-900 text-[35px] text-center w-[75vw] font-semibold text-white ml-[11%]'>
           Our project leverages the power of <span className="bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold">Visual memory,</span> allowing users to create and recall passwords through 
           <span className='bg-gradient-to-b from-[#FF512F] to-[#F09819] text-transparent bg-clip-text font-bold'> Graphical elements.</span> Move beyond the limitations of traditional 
           <span className='bg-gradient-to-b from-[#1FA2FF] via-[#12D8FA] to-[#A6FFCB] text-transparent bg-clip-text font-bold'> Text-based Passwords.</span> 
@@ -44,7 +45,7 @@ const About = () => {
       <div className='bg-richblack-700 h-[1px] w-full'></div>
 
       <div className='flex justify-evenly items-center'>
-        <div className='max-w-[45vw] text-lg'>
+        <div className='cutting w-[45vw] text-lg'>
         <div className='text-center text-3xl bg-gradient-to-b from-[#f6079a] via-[#da0d0d] to-[#e0a912] text-transparent bg-clip-text font-bold mb-5'>
           Key Features 
         </div>
@@ -56,13 +57,13 @@ const About = () => {
         Innovation :- Pushing the boundaries of traditional authentication methods by introducing a visually engaging and effective alternative.
         </div>
 
-        <div className='mt-5'>
+        <div className='gifs mt-5'>
           <img width={450} src={gif2}/>
         </div>
       </div>
 
-      <div className='flex justify-evenly mt-10 mb-10'>
-        <div className='max-w-[42vw] text-lg'>
+      <div className='how flex justify-evenly mt-10 mb-10'>
+        <div className='how1 w-[42vw] text-lg'>
           <div className='text-center text-3xl bg-gradient-to-b from-[#f6079a] via-[#da0d0d] to-[#e0a912] text-transparent bg-clip-text font-bold mb-10'>
             How it works 
           </div>

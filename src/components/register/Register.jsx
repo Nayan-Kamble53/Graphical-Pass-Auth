@@ -169,7 +169,7 @@ function Register() {
       />
 
       <NavBar/>
-      <div className="mx-auto my-2 font-light flex justify-between h-full max-w-[75vw] mb-[-2.2%]">
+      <div className="mx-auto my-2 font-light flex justify-between h-[85vh] max-w-[75vw] mb-[-2.2%]">
         <form className="reg pt-6 w-[28vw] flex flex-col items-center">
           <h1 className='text-richblack-5 font-semibold text-[1.6rem] mx-5 mb-5'>
             Welcome to Graphical Password Authentication System !
@@ -256,7 +256,7 @@ function Register() {
         <div className="regCon flex flex-col justify-center items-center mt-10">
           <p className="mx-auto text-3xl my-2">You're almost there!</p>
           
-          <button className="bg-yellow-50 w-[12vw] py-[8px] px-[] mt-2 rounded-xl font-medium text-richblack-900 mb-20" 
+          <button className="bg-yellow-50 w-[12vw] py-[8px] mt-2 rounded-xl font-medium text-richblack-900 mb-20" 
             onClick={register}>
               Confirm registration
           </button>
@@ -273,7 +273,7 @@ function Register() {
           />)
       )}  
       
-      <div className=" mt-[-1%]">
+      <div className=" mt-[-4%]">
         <Footer/>
       </div>
     </Fragment>

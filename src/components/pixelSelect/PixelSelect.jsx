@@ -58,14 +58,14 @@ function PixelSelect({
   }, [imageURL, dimension, selectionResolution]);
 
   return (
-    <div className="mx-auto flex flex-col">
-      <span>
+    <div className="seqDiv mx-auto flex flex-col">
+      <span className="seq">
         Select a sequence of tiles. If you don't want this image or if you want
         to change your sequence, click the cross icon above.
       </span>
       <div
         id="selection-grid"
-        className="grid grid-cols-5 gap-x-0 gap-y-2 w-96 mx-auto"
+        className="seqDiv grid grid-cols-5 gap-x-0 gap-y-2 w-96 mx-auto"
       ></div>
 
       {/* btn-disabled is not working, but it's handled in submitSequence */}

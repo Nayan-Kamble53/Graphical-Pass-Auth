@@ -48,6 +48,7 @@
     }
   } 
 
+
   @media (max-width: 720px) {
     .home {
       height: 100vh;
@@ -141,5 +142,93 @@
 
     .otp form h1 {
       text-align: center;
+    }
+
+    .seqDiv {
+      width: 90vw;
+    }
+
+    .seq {
+      text-align: center;
+    }
+
+    .driving {
+      margin-top: 25%;
+      font-size: larger;
+      width: 95vw;
+      line-height: 1.5rem;
+    }
+
+    .cutting {
+      width: 80vw;
+    }
+
+    .gifs {
+      display: none;
+    }
+
+    .our {
+      width: 90vw;
+      margin-left: 5%;
+      margin-top: 5%;
+      font-size: 25px;
+    }
+
+    .how {
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      margin-bottom: 15px;
+    }
+
+    .how1 {
+      width: 85vw;
+      margin: 0 30px;
+    }
+
+    .con {
+      height: 100%;
+    }
+
+    .conImg {
+      display: none;
+    }
+
+    .con1 {
+      width: 90vw;
+      margin-bottom: 5%;
+      margin-top: 12%;
+    }
+
+    .con1 h1 {
+      font-size: large;
+      width: 70vw;
+    }
+
+    .txta textarea{
+      width: 100%;
+    }
+
+    .conInp input{
+      width: 115%;
+    }
+  }
+
+
+  @media (max-width: 1050px) {
+    .gif1{
+      display: none;
+    }
+
+    .con {
+      height: 100vh;
+    }
+
+    .log form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50vw;
     }
   }
