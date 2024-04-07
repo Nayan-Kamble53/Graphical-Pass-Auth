@@ -273,7 +273,7 @@ function Register() {
           />)
       )}  
       
-      <div className=" mt-[-4%]">
+      <div className=" mt-[5%]">
         <Footer/>
       </div>
     </Fragment>
