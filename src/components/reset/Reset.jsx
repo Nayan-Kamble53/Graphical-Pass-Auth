@@ -53,7 +53,11 @@ const Reset = () => {
               toast.success(`OTP Sent Successfully!`)
               navigate("/otp",{state:email})
           } else {
-              toast.error(response.response.data.error);
+              toast.error("Entered email is not logged in");
+              setTimeout(() => {
+                window.location.reload();
+              }, 3000);
+            //   toast.error(response.response.data.error);
           }
       }
     }      
