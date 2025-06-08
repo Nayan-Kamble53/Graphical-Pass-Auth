@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { navigate, useLocation } from "@reach/router";
-import { NavBar } from "../navbar";
-import { Footer } from "../footer";
 import { toast } from "react-toastify";
 import axios from "axios";
 
@@ -74,10 +72,7 @@ const Otp = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-between">
-      <NavBar />
-
-      <div className="otp flex flex-col items-center">
+      <div className="h-screen flex justify-center items-center">
         <form className="shadow-lg shadow-slate-500 rounded px-8 pt-6 pb-8 mb-4 w-[32vw]">
           <h1 className="text-richblack-5 font-semibold text-[1.6rem] mx-5 mb-5">
             OTP !
@@ -136,8 +131,6 @@ const Otp = () => {
           </div>
         </form>
       </div>
-      <Footer />
-    </div>
   );
 };
 

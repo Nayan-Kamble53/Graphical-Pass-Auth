@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { NavBar } from '../navbar'
-import { Footer } from '../footer'
 import { toast } from "react-toastify";
 import { navigate } from "@reach/router";
 import axios from 'axios';
@@ -33,7 +31,7 @@ const Reset = () => {
       return await commonrequest("POST",`https://graphical-pass-auth.onrender.com/sendotp`,data)
   }
 
-    const submitHandler = async (e) => {
+    const   submitHandler = async (e) => {
       e.preventDefault();
 
       if (email === "") {
@@ -63,10 +61,9 @@ const Reset = () => {
     }      
     
   return (
-      <div className=' h-screen flex flex-col justify-between'>
-        <NavBar/>
+      <div className=''>
         {isLoading ? <Spinner/> :
-        <div className='reset flex flex-col items-center'>
+        <div className='h-screen flex justify-center items-center'>
             <div className=" shadow-lg shadow-slate-500 rounded px-8 pt-6 pb-8 mb-4 w-[32vw]">
                 <h1 className='text-richblack-5 font-semibold text-[1.6rem] mx-5 mb-5'>
                 Reset your Password !
@@ -95,7 +92,7 @@ const Reset = () => {
                 <div className='flex justify-center'>
                     <button
                         onClick={submitHandler} 
-                        className='bg-yellow-50 py-[8px] px-[1.2rem] mt-2 rounded-xl font-medium text-richblack-900 focus:outline-none focus:shadow-outline '>
+                        className='bg-yellow-50 py-[8px] px-[1.2rem] mt-2 rounded-xl font-medium text-richblack-900 focus:outline-none focus:shadow-outline'>
                             Verify Email
                     </button>
                 </div>
@@ -103,7 +100,6 @@ const Reset = () => {
             </div>
         </div>
         }
-            <Footer/>
     </div>
   )
 }

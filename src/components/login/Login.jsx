@@ -4,8 +4,6 @@ import { ImageGrid } from "../imageGrid";
 import CryptoJS from "crypto-js";
 import { navigate } from "@reach/router";
 import Canvas from "../canvas/Canvas";
-import { Footer } from "../footer";
-import { NavBar } from "../navbar";
 import { Spinner } from "../spinner";
 import { toast } from "react-toastify";
 
@@ -167,9 +165,8 @@ function Login({setIsLoggedIn}) {
         }}
       />
 
-      <NavBar/>
       { showDiv ? (
-      <div className="log m-8 font-light flex justify-center">
+      <div className="h-full font-light flex justify-center items-center">
         <form className="shadow-lg shadow-slate-500 rounded px-8 pt-6 pb-8 mb-4 w-[32vw]">
 
           <h1 className='text-richblack-5 font-semibold text-[1.6rem] mx-5 mb-5'>
@@ -229,9 +226,6 @@ function Login({setIsLoggedIn}) {
         />
       </div>)
       )}
-      <div className="mt-[-10px]">
-        <Footer/>
-      </div>
     </div>
   );
 }

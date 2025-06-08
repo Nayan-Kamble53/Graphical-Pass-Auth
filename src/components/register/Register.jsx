@@ -5,8 +5,6 @@ import CryptoJS from "crypto-js";
 import axios from "axios";
 import { navigate } from "@reach/router";
 import Canvas from "../canvas/Canvas";
-import {NavBar} from '../navbar'
-import {Footer} from '../footer'
 import {Spinner} from '../spinner'
 import registerImg from '../Assets/reg.png'
 import { toast } from "react-toastify";
@@ -168,7 +166,6 @@ function Register() {
         }}
       />
 
-      <NavBar/>
       <div className="mx-auto my-2 font-light flex justify-between h-[85vh] max-w-[75vw] mb-[-2.2%]">
         <form className="reg pt-6 w-[28vw] flex flex-col items-center">
           <h1 className='text-richblack-5 font-semibold text-[1.6rem] mx-5 mb-5'>
@@ -272,10 +269,6 @@ function Register() {
             isLoading={isLoading}
           />)
       )}  
-      
-      <div className=" mt-[5%]">
-        <Footer/>
-      </div>
     </Fragment>
   );
 }

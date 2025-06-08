@@ -5,7 +5,7 @@ import "./NavBar.css";
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 
-export default function NavBar() {
+export default function NavBar({ isLoggedIn }) {
   const [isMobile, setIsMobile] = useState(false);
 
   function homeClick() {
@@ -39,8 +39,10 @@ export default function NavBar() {
         loading="lazy"
       />
 
-      <nav className={isMobile ? "nav-links-mobile" : ""}
-        onClick={() => setIsMobile(false)}>
+      <nav
+        className={isMobile ? "nav-links-mobile" : ""}
+        onClick={() => setIsMobile(false)}
+      >
         <ul className="flex gap-x-6 text-richblack-100 text-lg">
           <li className="home1 cursor-pointer" onClick={homeClick}>
             Home
@@ -55,6 +57,8 @@ export default function NavBar() {
       </nav>
 
       <div className="lr flex items-center gap-x-4 text-richblack-100">
+        {!isLoggedIn ? (
+          <>
         <button
           onClick={loginClick}
           className="l bg-richblack-800 py-[6px] px-[12px] rounded-[8px] border border-richblack-700"
@@ -62,16 +66,22 @@ export default function NavBar() {
           Login
         </button>
 
-        <button
-          onClick={regClick}
-          className="r bg-richblack-800 py-[6px] px-[12px] rounded-[8px] border border-richblack-700"
-        >
-          Register
-        </button>
+          <button
+            onClick={regClick}
+            className="r bg-richblack-800 py-[6px] px-[12px] rounded-[8px] border border-richblack-700"
+          >
+            Register
+          </button>
+          </>
+        ) : (
+          ""
+        )}
       </div>
 
-      <button className="mobile-menu-icon"
-        onClick={() => setIsMobile(!isMobile)}>
+      <button
+        className="mobile-menu-icon"
+        onClick={() => setIsMobile(!isMobile)}
+      >
         {isMobile ? <FaXmark /> : <FaBars />}
       </button>
     </div>

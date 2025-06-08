@@ -11,11 +11,14 @@ import { Contact } from "./components/contact";
 import { Reset } from "./components/reset";
 import { Otp } from "./components/otp";
 import PrivateRoute from "./components/PrivateRoute";
+import { NavBar } from "./components/navbar";
+import { Footer } from "./components/footer";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="bg-richblack-900">
+      <NavBar isLoggedIn={isLoggedIn} />
       <Router>
         <Home path="/" />
         <Register path="/register" />
@@ -26,6 +29,7 @@ function App() {
         <Reset path="/reset" />
         <Otp path="/otp" />
       </Router>
+      <Footer/>
 
       <ToastContainer
         position="top-right"
